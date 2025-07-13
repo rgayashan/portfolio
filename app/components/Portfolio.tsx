@@ -16,6 +16,7 @@ import vemas from '../assets/images/project/project_vemas.png'
 import zoomi from '../assets/images/company/zoomi.jpeg'
 import hithsa from '../assets/images/company/hithsa.jpeg'
 import elegant from '../assets/images/company/elegant_media.png'
+import { useState } from "react";
 
 
 const Portfolio = () => {
@@ -126,6 +127,15 @@ const Portfolio = () => {
     },
   ];
 
+  const [filter, setFilter] = useState("All");
+
+  const webProjects = projects.filter((project) => project.category === "Web Application");
+  const mobileProjects = projects.filter((project) => project.category === "Mobile Application");
+
+  let filteredProjects = projects;
+  if (filter === "Web") filteredProjects = webProjects;
+  if (filter === "Mobile") filteredProjects = mobileProjects;
+
   return (
     <section id="portfolio" className="py-20 bg-dark">
       <div className="container mx-auto px-6">
@@ -137,11 +147,28 @@ const Portfolio = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Portfolio</h2>
-          <div className="w-24 h-1 bg-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          {/* Filter Buttons */}
+          <div className="flex justify-center gap-4 mb-4">
+            {['All', 'Web', 'Mobile'].map((type) => (
+              <button
+                key={type}
+                onClick={() => setFilter(type)}
+                className={`px-5 py-2 rounded-full font-semibold border transition-colors duration-200 focus:outline-none ${
+                  filter === type
+                    ? 'bg-primary text-dark border-primary'
+                    : 'bg-transparent text-gray-300 border-gray-600 hover:bg-gray-800'
+                }`}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
         </motion.div>
 
+        {/* Filtered Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 50 }}
@@ -179,7 +206,6 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-
               <div className="p-6">
                 {project.company && project.companyLogo && (
                   <div className="flex items-center mb-2">
@@ -200,7 +226,6 @@ const Portfolio = () => {
                 <p className="text-gray-300 text-sm mb-4">
                   {project.description}
                 </p>
-
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
@@ -215,17 +240,6 @@ const Portfolio = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-12"
-        >
-          <button className="bg-primary text-dark px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
-            View More
-          </button>
-        </motion.div>
       </div>
     </section>
   );
