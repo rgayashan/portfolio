@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div style={{ position: 'relative', minHeight: '100vh', zIndex: 2 }}>
-          {/* <ParticlesBackground /> */}
           <div style={{ position: 'relative' }}>
             {children}
           </div>
