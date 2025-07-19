@@ -7,29 +7,29 @@ import profilePhoto from '../assets/images/profile_image.png'
 
 const Hero = () => {
 
- const handleDownload = () => {
-  const pdfUrl = "resumes/iOS_developer_rajitha.pdf";
-  
-  // First check if file exists
-  fetch(pdfUrl)
-    .then(response => {
-      if (response.ok) {
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.setAttribute("download", "Rajitha_Resume.pdf");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        console.error('File not found');
-        alert('Resume file not found');
-      }
-    })
-    .catch(error => {
-      console.error('Error accessing file:', error);
-      alert('Error accessing resume file');
-    });
-};
+  const handleDownload = () => {
+    const pdfUrl = "resumes/iOS_developer_rajitha.pdf";
+
+    // First check if file exists
+    fetch(pdfUrl)
+      .then(response => {
+        if (response.ok) {
+          const link = document.createElement("a");
+          link.href = pdfUrl;
+          link.setAttribute("download", "Rajitha_Resume.pdf");
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          console.error('File not found');
+          alert('Resume file not found');
+        }
+      })
+      .catch(error => {
+        console.error('Error accessing file:', error);
+        alert('Error accessing resume file');
+      });
+  };
 
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
@@ -58,25 +58,27 @@ const Hero = () => {
             iOS & Web Developer
           </motion.p>
 
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({ 
-                behavior: 'smooth' 
-              });
-            }}
-            className="bg-primary text-dark px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 mr-4"
-          >
-            Contact Me
-          </motion.button>
-          <button onClick={handleDownload}
-          className="inline-block bg-transparent border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-dark transition-colors duration-300">
-  Download Resume
-</button>
+          <div className="flex flex-col md:flex-row gap-4 mb-6">
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }}
+              className="bg-primary text-dark px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 md:mr-4"
+            >
+              Contact Me
+            </motion.button>
+            <button onClick={handleDownload}
+              className="inline-block bg-transparent border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-dark transition-colors duration-300">
+              Download Resume
+            </button>
+          </div>
         </motion.div>
 
         {/* Right Content - Profile Image */}
@@ -115,7 +117,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1 }}
-        className="fixed right-6 top-1/2 transform -translate-y-1/2 space-y-4 z-10"
+        className="fixed right-6 top-1/2 transform -translate-y-1/2 space-y-8 z-10"
       >
         {[
           { icon: FiTwitter, href: "https://x.com/__Rajitha", label: "Twitter" },

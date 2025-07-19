@@ -101,7 +101,7 @@ const Experience = () => {
                     {exp.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-gray-800 text-xs px-3 py-1 rounded-full text-gray-300"
+                        className="bg-gray-800 text-xs px-3 py-1 rounded-[20px] text-gray-300"
                       >
                         {tech}
                       </span>

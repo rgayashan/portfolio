@@ -38,7 +38,6 @@ const Navbar = () => {
             transition={{ delay: 0.2 }}
             className="text-2xl font-bold text-primary"
           >
-            🌙
           </motion.div>
 
           {/* Desktop Menu */}
@@ -59,7 +58,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -69,23 +68,29 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-4 pb-4"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 100 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            className="md:hidden fixed top-20 right-10 w-5/6 max-w-xs bg-darker/95 rounded-2xl shadow-2xl p-6 z-50 text-end"
           >
-            {navItems.map((item, index) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.05 * index }}
-                className="block py-2 text-white hover:text-primary transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </motion.a>
-            ))}
+            <div className="flex flex-col gap-4">
+              {navItems.map((item, index) => (
+                <motion.a
+                  key={item.name}
+                  href={item.href}
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 * index }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="block py-3 px-4 text-lg text-white rounded-xl hover:bg-primary/20 hover:text-primary transition-all duration-300 font-semibold"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </motion.a>
+              ))}
+            </div>
           </motion.div>
         )}
       </div>
