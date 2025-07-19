@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div style={{ position: 'relative', minHeight: '100vh', zIndex: 2 }}>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative', overflow: 'hidden' }}>
             {children}
           </div>
         </div>
