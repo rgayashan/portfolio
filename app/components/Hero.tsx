@@ -117,7 +117,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1 }}
-        className="fixed right-6 top-1/2 transform -translate-y-1/2 space-y-8 z-10"
+        className="fixed right-8 top-1/2 transform -translate-y-1/2 space-y-8 z-10"
       >
         {[
           { icon: FiTwitter, href: "https://x.com/__Rajitha", label: "Twitter" },
