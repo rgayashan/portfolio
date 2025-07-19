@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import ParticlesBackground from '../app/components/ParticlesBackground';
+// import ParticlesBackground from '../app/components/ParticlesBackground';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div style={{ position: 'relative', minHeight: '100vh', zIndex: 2 }}>
-          <ParticlesBackground />
+          {/* <ParticlesBackground /> */}
           <div style={{ position: 'relative' }}>
             {children}
           </div>
