@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import cl from '../assets/images/company/cl.png'
 import zoomi from '../assets/images/company/zoomi.jpeg'
 import hithsa from '../assets/images/company/hithsa.jpeg'
 import elegant from '../assets/images/company/elegant_media.png'
@@ -15,12 +16,24 @@ const Experience = () => {
 
   const experiences = [
     {
-      year: "2022 January - Present",
+      year: "2025 October - Present",
+      position: "Software Engineer",
+      company: "CL.",
+      location: "",
+      description:
+        "Serving as a Software Engineer at CL., specializing in frontend development with Next.js, shadcn/ui, and Tailwind CSS, alongside native iOS application development utilizing Swift and SwiftUI frameworks.",
+      technologies: [
+        "Next.js, shadcn/ui, Tailwind CSS, Swift, SwiftUI, Git, Jira",
+      ],
+      image: cl,
+    },
+    {
+      year: "2022 January - 2025 May",
       position: "Software Engineer",
       company: "ZOOMi Technologies Inc.",
       location: "Hybrid",
       description:
-        "Working as a software engineer for ZOOMi Technologies Inc. Currently working on web development in Next.js, React, and app development in Swift, SwiftUI, UIKit.",
+        "Served as a Software Engineer at ZOOMi Technologies Inc., specializing in frontend development with Next.js and React, alongside native iOS application development utilizing Swift, SwiftUI, and UIKit frameworks.",
       technologies: [
         "Swift, Objective -C, SwiftUI, UIKit, React, Next.js,Axios, Tailwind CSS, N8N, HTML, CSS, Python, Django, Jira, Trello, Xcode, VSCode, Git",
       ],
@@ -32,7 +45,7 @@ const Experience = () => {
       company: "Hithsa Pty Ltd",
       location: "",
       description:
-        "Working as a software engineer for Hithsa Pty Ltd. Currently working on Swift, SwiftUI, UIKit, Xcode, Git.",
+        "Providing software engineering services as a freelance consultant for Hithsa Pty Ltd, focusing on native iOS application development using Swift, SwiftUI, and UIKit within the Xcode development environment.",
       technologies: [
         "Swift, SwiftUI, UIKit, Xcode, Git",
       ],
@@ -44,7 +57,7 @@ const Experience = () => {
       company: "Elegant Media Sri Lanka",
       location: "Remote",
       description:
-        "Worked as a software engineer intern for Elegant Media Sri Lanka. Developed an apps for clients. Implemented the app using Swift(SwiftUI).",
+        "Served as a Software Engineer Intern at Elegant Media Sri Lanka, contributing to client-facing mobile application development projects. Implemented applications utilizing Swift and SwiftUI frameworks.",
       technologies: ["Swift, SwiftUI, Trello, Xcode, Git"],
       image: elegant,
     },

@@ -54,11 +54,12 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
+              <h3 className="text-2xl font-bold mb-4">Let&apos;s Connect</h3>
               <p className="text-gray-300 text-lg">
-                I&apos;m always open to discussing new opportunities,
-                interesting projects, or just having a conversation about
-                technology. Feel free to reach out!
+                I welcome opportunities to discuss potential collaborations,
+                innovative projects, or engage in professional dialogue about
+                technology and software development. Please feel free to reach
+                out to explore how we can work together.
               </p>
             </div>
 

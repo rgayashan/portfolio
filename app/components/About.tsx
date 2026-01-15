@@ -30,32 +30,36 @@ const About = () => {
           className="max-w-4xl mx-auto"
         >
           <p className="text-gray-300 text-lg leading-relaxed">
-            I&#39;m a passionate and results-driven software engineer with
-            hands-on experience in both web and iOS development. Over the past
-            few years, I&#39;ve built and maintained scalable, user-centric
-            applications using React, Next.js, SwiftUI, UIKit, and Objective-C,
-            contributing to both startup and enterprise-level products.
+            I am a results-oriented software engineer with extensive expertise in
+            frontend web development and native iOS application development.
+            Throughout my career, I have architected and delivered scalable,
+            enterprise-grade solutions using modern technologies including React,
+            Next.js, SwiftUI, UIKit, and Objective-C, serving clients across
+            startup and enterprise environments.
             <br />
             <br />
-            My core strengths lie in:
+            My professional competencies encompass:
             <br />
-            ▸ Designing and developing responsive web interfaces with React and
-            Next.js
+            ▸ Architecting and implementing responsive, high-performance web
+            applications utilizing React and Next.js frameworks
             <br />
-            ▸ Building robust and intuitive iOS applications with SwiftUI and
-            UIKit
+            ▸ Developing native iOS applications with SwiftUI and UIKit,
+            ensuring optimal performance and user experience
             <br />
-            ▸ Integrating APIs, optimizing app performance, and ensuring
-            seamless user experiences across platforms
+            ▸ Designing and integrating RESTful APIs, optimizing application
+            performance, and delivering seamless cross-platform user experiences
             <br />
-            ▸ Collaborating cross-functionally with designers, product owners,
-            and QA to ship quality features on time
+            ▸ Leading cross-functional collaboration with design teams, product
+            managers, and quality assurance to deliver production-ready features
+            within established timelines
             <br />
-            <br />I enjoy taking on new challenges, continuously improving my
-            skills, and staying up to date with the latest trends in frontend
-            and mobile development. Whether it&#39;s creating a slick UI or
-            solving complex logic under the hood, I&#39;m committed to
-            delivering clean, maintainable code and impactful user experiences.
+            <br />
+            I am dedicated to continuous professional development, staying
+            current with industry best practices and emerging technologies in
+            frontend and mobile development. My approach emphasizes writing
+            clean, maintainable, and well-documented code while delivering
+            solutions that drive measurable business value and exceptional user
+            experiences.
           </p>
         </motion.div>
       </div>

@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-xl text-gray-300 mb-10"
           >
-            iOS & Web Developer
+            Software Engineer | iOS & Frontend Developer
           </motion.p>
 
           <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -72,7 +72,7 @@ const Hero = () => {
               }}
               className="bg-primary text-dark px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 md:mr-4"
             >
-              Contact Me
+              Get In Touch
             </motion.button>
             <button onClick={handleDownload}
               className="inline-block bg-transparent border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-dark transition-colors duration-300">

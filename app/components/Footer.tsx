@@ -14,11 +14,11 @@ const Footer = () => {
           className="text-center"
         >
           <p className="text-gray-300 flex items-center justify-center space-x-2">
-            <span>&copy; {new Date().getFullYear()} Rajitha. Made with Next.js with Tailwind CSS</span>
+            <span>&copy; {new Date().getFullYear()} Rajitha Gayashan. Built with Next.js and Tailwind CSS</span>
             <FiHeart className="text-red-500" />
           </p>
           <p className="text-gray-400 text-sm mt-2">
-            Thanks for Scrolling
+            Thank you for visiting
           </p>
         </motion.div>
       </div>
