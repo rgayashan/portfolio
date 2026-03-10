@@ -7,12 +7,14 @@ import Image from "next/image";
 import athinatha from '../assets/images/project/project_athinatha.png'
 import find_a_mechanic from '../assets/images/project/project_find_a_mechanic.png'
 import fixel_magic from '../assets/images/project/project_fixel_magic.png'
+import jova_wallet from '../assets/images/project/project_jova.png'
 import justmove from '../assets/images/project/project_justmove.jpeg'
 import justmove_admin from '../assets/images/project/project_justmove_admin.jpg'
 import luxtix from '../assets/images/project/project_luxtix.png'
 import padm from '../assets/images/project/project_padm.png'
 import r8er from '../assets/images/project/project_r8er.png'
 import vemas from '../assets/images/project/project_vemas.png'
+import cl from '../assets/images/company/cl.png'
 import zoomi from '../assets/images/company/zoomi.jpeg'
 import hithsa from '../assets/images/company/hithsa.jpeg'
 import elegant from '../assets/images/company/elegant_media.png'
@@ -69,6 +71,17 @@ const Portfolio = () => {
       live: "#",
       company: "Zoomi Technologies",
       companyLogo: zoomi,
+    },
+    {
+      title: "Jova Wallet",
+      category: "Mobile Application",
+      image: jova_wallet,
+      description: "Jova Wallet is a secure, multi-chain cryptocurrency wallet built for iOS. Developed the native iOS app using SwiftUI and MVVM, with secure storage for sensitive data (seed phrase, PIN) via Keychain and BIP39 wallet generation with TrustWalletCore. Implemented a full onboarding flow (passcode, biometrics, seed phrase backup), WalletConnect v2 for dApp connections, and integration with Jova Chain APIs for multi-chain balances, transactions, token swaps, and market data. Uses Lottie for splash animations, environment-based configuration (dev/staging/prod), and session security with biometric and PIN authentication.",
+      technologies: ["Swift", "SwiftUI", "TrustWalletCore", "WalletConnect", "Keychain", "Lottie", "CocoaPods", "REST API" ],
+      github: "#",
+      live: "#",
+      company: "CL.",
+      companyLogo: cl,
     },
     {
       title: "JustMove",

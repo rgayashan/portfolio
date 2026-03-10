@@ -19,13 +19,25 @@ const Experience = () => {
       year: "2025 October - Present",
       position: "Software Engineer",
       company: "CL.",
-      location: "",
+      location: "Hybrid",
       description:
-        "Serving as a Software Engineer at CL., specializing in frontend development with Next.js, shadcn/ui, and Tailwind CSS, alongside native iOS application development utilizing Swift and SwiftUI frameworks.",
+        "Building native iOS applications for CL., focusing on secure cryptocurrency and fintech solutions. Working with SwiftUI and MVVM architecture to deliver features such as secure wallet flows, Keychain-based storage, WalletConnect integrations, and multi-chain API connections. Shipping production-ready apps with environment-based configuration, biometric and PIN authentication, and robust dependency management.",
       technologies: [
-        "Next.js, shadcn/ui, Tailwind CSS, Swift, SwiftUI, Git, Jira",
+        "Swift, SwiftUI, Git, Jira, Xcode, CocoaPods",
       ],
       image: cl,
+    },
+    {
+      year: "2025 May - 2025 September",
+      position: "Software Engineer - Freelance",
+      company: "Hithsa Pty Ltd",
+      location: "Remote",
+      description:
+        "Providing software engineering services as a freelance consultant for Hithsa Pty Ltd, focusing on native iOS application development using Swift, SwiftUI, and UIKit within the Xcode development environment.",
+      technologies: [
+        "Swift, SwiftUI, UIKit, Xcode, Git",
+      ],
+      image: hithsa,
     },
     {
       year: "2022 January - 2025 May",
@@ -38,18 +50,6 @@ const Experience = () => {
         "Swift, Objective -C, SwiftUI, UIKit, React, Next.js,Axios, Tailwind CSS, N8N, HTML, CSS, Python, Django, Jira, Trello, Xcode, VSCode, Git",
       ],
       image: zoomi,
-    },
-    {
-      year: "2023 May - Present",
-      position: "Software Engineer - Freelance",
-      company: "Hithsa Pty Ltd",
-      location: "",
-      description:
-        "Providing software engineering services as a freelance consultant for Hithsa Pty Ltd, focusing on native iOS application development using Swift, SwiftUI, and UIKit within the Xcode development environment.",
-      technologies: [
-        "Swift, SwiftUI, UIKit, Xcode, Git",
-      ],
-      image: hithsa,
     },
     {
       year: "2021 January - 2021 July",
